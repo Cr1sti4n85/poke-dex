@@ -109,6 +109,47 @@ nav input {
   width: 240px;
 }
 
+.img-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stats-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem 1rem;
+}
+
+.pokemon-move-grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat-item p,
+.pokemon-move p {
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.pokemon-move p {
+  margin: 0 auto;
+}
+
+.pokemon-move {
+  width: 100%;
+  flex: 1;
+}
+
 @media (min-width: 640px) {
   #root {
     flex-direction: row;
