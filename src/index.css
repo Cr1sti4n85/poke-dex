@@ -9,6 +9,32 @@
   width: 100%;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+header h1,
+.header h1 {
+  padding-bottom: 0.5rem;
+}
+
+.open-nav-button {
+  border: none;
+  padding: 0.25rem;
+  box-shadow: none;
+  font-size: 1.2rem;
+}
+
+.open-nav-button:hover {
+  transform: translate(0);
+  box-shadow: 0;
+  opacity: 0.6;
+}
+
 nav {
   padding: 1rem;
   padding-top: 0;
@@ -34,12 +60,20 @@ nav div:first-of-type {
   z-index: 14;
 }
 
+nav:not(.open) {
+  display: none;
+}
+
 nav h1 {
   padding: 0.25rem 0;
 }
 
 nav input {
   font-size: 0.8rem;
+}
+
+h3 {
+  padding-top: 1rem;
 }
 
 .header {
